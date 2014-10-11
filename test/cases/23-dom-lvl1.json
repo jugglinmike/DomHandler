@@ -1,14 +1,27 @@
 {
   "name": "DOM level 1",
   "options": { "withDomLvl1": true },
-  "html": "<div>some stray text<h1>Hello, world.</h1><!-- comment node -->more stray text</div>",
+  "html": "<div class='main'>some stray text<h1>Hello, world.</h1><!-- comment node -->more stray text</div>",
   "expected": [
     {
       "type": "tag",
       "nodeType": 1,
       "name": "div",
       "tagName": "div",
-      "attribs": {},
+      "attribs": {
+        "class": "main"
+      },
+      "attributes": {
+        "class": {
+          "name": "class",
+          "value": "main"
+        },
+        "0": {
+          "name": "class",
+          "value": "main"
+        },
+        "length": 1
+      },
       "nodeValue": null,
       "children": [
         {
